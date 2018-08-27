@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Encuesta</h2>
+
+<form action="/action_page.php">
+  Nombre:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Apellido:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br>
+  Fecha de nacimiento:<br>
+  <input type="date" name="bday">
+  <br>
+  Sexo:<br>
+  <input type="radio" name="gender" value="male" checked> Hombre<br>
+  <input type="radio" name="gender" value="female"> Mujer<br>
+  <input type="radio" name="gender" value="other"> Otres
+  <br>
+  Valoracion de la pagina:<br>
+  <select name="valoracion">
+   <option value="lamentable">Lamentable</option>
+   <option value="mala">Mala</option>
+   <option value="podria ser mejor">Podria ser mejor</option>
+   <option value="buena">Buena</option>
+   <option value="me encanto">Me encanto</option>
+  </select>
+  <br>
+  Comentarios:<br>
+  <textarea name="message" rows="5" cols="30"></textarea>
+  <br>
+
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="button" onclick="alert('Hello World!')" value="Cancelacion">
+  <input type="reset">
+</form>
+
+
+</body>
+</html>
