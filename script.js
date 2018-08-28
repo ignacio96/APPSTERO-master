@@ -21,8 +21,8 @@ function setBindings() {
 
 
 	$(".box").click(function(e){
-			var alt = $(this).children().children().children().attr("alt");
-			$("alt").css("opacity", 0.2);
+			var id = $(this).children().children().children().attr("id");
+			$("#" + id).css("opacity", 0.2);
 		});
 
 
