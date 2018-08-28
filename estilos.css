@@ -40,7 +40,7 @@
    }
 
 
- 	main {margin-left: 300px;	}
+ 	main {margin-left: 0;	}
 
 
 
@@ -174,9 +174,8 @@
 	}
 
 .container{
-		width: 1280px;
-
-
+		width: 1400px;
+text-align: center;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}

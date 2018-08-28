@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+    <div class="main-container">
+    <header>
+        <div class="container banner" >
+        <a title="Starway to Hell" href="index.html"><img class="banner-image" src="IMG/musicBanner3.jpg" alt="logo" /></a>
+    </header>
 
-<h2>Encuesta</h2>
+    <div class="navbar" id="mynav">
 
-<form action="/action_page.php">
-  Nombre:<br>
-  <input type="text" name="firstname" value="Mickey">
-  <br>
-  Apellido:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br>
-  Fecha de nacimiento:<br>
-  <input type="date" name="bday">
-  <br>
-  Sexo:<br>
-  <input type="radio" name="gender" value="male" checked> Hombre<br>
-  <input type="radio" name="gender" value="female"> Mujer<br>
-  <input type="radio" name="gender" value="other"> Otres
-  <br>
-  Valoracion de la pagina:<br>
-  <select name="valoracion">
-   <option value="lamentable">Lamentable</option>
-   <option value="mala">Mala</option>
-   <option value="podria ser mejor">Podria ser mejor</option>
-   <option value="buena">Buena</option>
-   <option value="me encanto">Me encanto</option>
-  </select>
-  <br>
-  Comentarios:<br>
-  <textarea name="message" rows="5" cols="30"></textarea>
-  <br>
+      <a id="guitarras" href="#guitarras1" >Guitarras</a>
+      <a id="bajos" href="#bajos1" >Bajos</a>
+      <a id="baterias" href="#baterias1" >Baterias</a>
+      <a id="pianos" href="#pianos1" >Pianos</a>
+      <a id="encuesta" href="encuesta.html" >Encuesta</a>
+    </div>
 
-  <br><br>
-  <input type="submit" value="Submit">
-  <input type="button" onclick="alert('Hello World!')" value="Cancelacion">
-  <input type="reset">
-</form>
+    <main>
+          <h2>Encuesta</h2>
 
+          <form action="/action_page.php">
+            Nombre:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Apellido:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br>
+            Fecha de nacimiento:<br>
+            <input type="date" name="bday">
+            <br>
+            Sexo:<br>
+            <input type="radio" name="gender" value="male" checked> Hombre<br>
+            <input type="radio" name="gender" value="female"> Mujer<br>
+            <input type="radio" name="gender" value="other"> Otres
+            <br>
+            Valoracion de la pagina:<br>
+            <select name="valoracion">
+             <option value="lamentable">Lamentable</option>
+             <option value="mala">Mala</option>
+             <option value="podria ser mejor">Podria ser mejor</option>
+             <option value="buena">Buena</option>
+             <option value="me encanto">Me encanto</option>
+            </select>
+            <br>
+            Comentarios:<br>
+            <textarea name="message" rows="5" cols="30"></textarea>
+            <br>
 
-</body>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="button" onclick="alert('Hello World!')" value="Cancelacion">
+            <input type="reset">
+          </form>
+        </main>
+          </body>
 </html>

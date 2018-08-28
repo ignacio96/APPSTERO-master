@@ -7,12 +7,19 @@ function setBindings() {
 
 	$(".navbar a").click(function(e){
 		e.preventDefault();
-		var sectionID = e.currentTarget.id + "1";
+		if (e.currentTarget.id !== "encuesta") {
+				var sectionID = e.currentTarget.id + "1";
+				$("html body").animate({
+					scrollTop: $("#" + sectionID).offset().top
+				}, 1000)
+		}
+		else {
+			window.location.href = 'encuesta.html';
+		}
 
-		$("html body").animate({
-			scrollTop: $("#" + sectionID).offset().top
-		}, 1000)
 	})};
+
+
 
 	$(".details").click(function(e){
 		$(".imgBox").css("opacity", 0.2);
