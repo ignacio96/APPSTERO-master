@@ -22,7 +22,14 @@ function setBindings() {
 
 	$(".box").click(function(e){
 			var id = $(this).children().children().children().attr("id");
-			$("#" + id).fadeTo(1000, .25);
+			
+						if ($("#" + id).css('opacity') == 1) {
+									$("#" + id).fadeTo(1000, .25)
+						}
+						else {
+									$("#" + id).fadeTo(1000, 1)
+						}
+
 		});
 
 
