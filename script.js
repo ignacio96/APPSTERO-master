@@ -20,10 +20,10 @@ function setBindings() {
 	})};
 
 
-
-	$(".details").click(function(e){
-		$(".imgBox").css("opacity", 0.2);
-	});
+	$(".box").click(function(e){
+			var alt = $(this).children().children().children().attr("alt");
+			$("alt").css("opacity", 0.2);
+		});
 
 
 

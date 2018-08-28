@@ -175,7 +175,6 @@
 
 .container{
 		width: 1400px;
-text-align: center;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
