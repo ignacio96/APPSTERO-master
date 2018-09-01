@@ -22,7 +22,7 @@ function setBindings() {
 
 	$(".box").click(function(e){
 			var id = $(this).children().children().children().attr("id");
-			
+
 						if ($("#" + id).css('opacity') == 1) {
 									$("#" + id).fadeTo(1000, .25)
 						}
@@ -53,4 +53,61 @@ function myFunction() {
   }
 }
 
+
+
+
+
 });
+
+function validateForm()
+  {
+	var letters = /^[A-Za-z]+$/;
+	var x = document.forms["myForm"]["firstname"].value;
+	var y = document.forms["myForm"]["lastname"].value;
+	var z = document.forms["myForm"]["bday"].value;
+	var w = document.forms["myForm"]["gender"].value;
+	var v = document.forms["myForm"]["valoracion"].value;
+
+	document.forms["myForm"]["firstname"].style.border = "1px solid black";
+	document.forms["myForm"]["lastname"].style.border = "1px solid black";
+	document.forms["myForm"]["bday"].style.border = "1px solid black";
+	/*document.forms["myForm"]["gender"].style.border = "2px solid black"
+	document.forms["myForm"]["valoracion"].style.border = "2px solid black";
+*/
+	if (x == "" || y == '' || z == '' || w == '' || v == '') {
+        alert("complete todos los campos obligatorios");
+				if (x == "") {
+    				document.forms["myForm"]["firstname"].style.border = "2px solid red";
+  				}
+				if (y == "") {
+	    			document.forms["myForm"]["lastname"].style.border = "2px solid red";
+	  			}
+				if (z == "") {
+		    		document.forms["myForm"]["bday"].style.border = "2px solid red";
+		  		}
+				if (w == "") {
+			  		document.forms["myForm"]["gender"].style.border = "2px solid red";
+			  	}
+				if (v == "") {
+						document.forms["myForm"]["valoracion"].style.border = "2px solid red";
+					}
+
+				return false;
+    } else if (x.match(letters) && y.match(letters)) {
+			alert('Your name have accepted : you can try another');
+			return false;
+			}
+			else
+			{
+			alert('nombre o apellido no validos, utilice solo caraceteres alfabeticos');
+			if (! x.match(letters)) {
+					document.forms["myForm"]["firstname"].style.border = "2px solid red";
+				}
+			if (! y.match(letters)) {
+					document.forms["myForm"]["lastname"].style.border = "2px solid red";
+				}
+
+			return false;
+    }
+
+ };
