@@ -69,8 +69,8 @@ function validateForm()
 	var w = document.forms["myForm"]["gender"].value;
 	var v = document.forms["myForm"]["valoracion"].value;
 
-	document.forms["myForm"]["firstname"].style.border = "1px solid black";
-	document.forms["myForm"]["lastname"].style.border = "1px solid black";
+	document.forms["myForm"]["firstname"].style.border = "none";
+	document.forms["myForm"]["lastname"].style.border = "none";
 	document.forms["myForm"]["bday"].style.border = "1px solid black";
 	/*document.forms["myForm"]["gender"].style.border = "2px solid black"
 	document.forms["myForm"]["valoracion"].style.border = "2px solid black";
@@ -86,9 +86,9 @@ function validateForm()
 				if (z == "") {
 		    		document.forms["myForm"]["bday"].style.border = "2px solid red";
 		  		}
-				if (w == "") {
+			/*	if (w == "") {
 			  		document.forms["myForm"]["gender"].style.border = "2px solid red";
-			  	}
+			  	}*/
 				if (v == "") {
 						document.forms["myForm"]["valoracion"].style.border = "2px solid red";
 					}
