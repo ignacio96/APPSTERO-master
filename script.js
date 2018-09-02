@@ -24,7 +24,8 @@ function setBindings() {
 			var id = $(this).children().children().children().attr("id");
 
 						if ($("#" + id).css('opacity') == 1) {
-									$("#" + id).fadeTo(1000, .25)
+									$("#" + id).fadeTo(1000, .25);
+						var precio = parseInt(document.getElementById("precio").innerText);
 						}
 						else {
 									$("#" + id).fadeTo(1000, 1)
