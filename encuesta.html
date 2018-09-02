@@ -27,18 +27,18 @@
 
           <form name="myForm" action="/action_page.php" onsubmit="return validateForm()">
             Nombre:<br>
-            <input type="text" name="firstname" value="Mickey">
+            <input type="text" name="firstname" value="">
             <br>
             Apellido:<br>
-            <input type="text" name="lastname" value="Mouse">
+            <input type="text" name="lastname" value="">
             <br>
             Fecha de nacimiento:<br>
             <input type="date" name="bday">
             <br>
             Sexo:<br>
-            <input type="radio" name="gender" value="male" checked> Hombre<br>
-            <input type="radio" name="gender" value="female"> Mujer<br>
-            <input type="radio" name="gender" value="other"> Otres
+            <input type="radio" name="gender" value="varon"> Hombre<br>
+            <input type="radio" name="gender" value="mujer"> Mujer<br>
+            <input type="radio" name="gender" value="otro"> Otres
             <br>
             Valoracion de la pagina:<br>
             <select name="valoracion">
@@ -55,7 +55,7 @@
 
             <br><br>
             <input type="submit" value="Submit">
-            <input type="button" onclick="alert('Hello World!')" value="Cancelacion">
+            <input type="button" onclick="return cancelar()" value="Cancelacion">
             <input type="reset">
           </form>
         </main>

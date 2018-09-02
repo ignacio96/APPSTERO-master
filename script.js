@@ -94,7 +94,7 @@ function validateForm()
 
 				return false;
     } else if (x.match(letters) && y.match(letters)) {
-			alert('Your name have accepted : you can try another');
+			alert('Nombre: ' + x + '\nApellido: ' + y + '\nFecha de nacimiento: ' + z + '\nSexo: ' + w + '\nValoracion: ' + v);
 			return false;
 			}
 			else
@@ -111,3 +111,12 @@ function validateForm()
     }
 
  };
+
+function cancelar()
+{
+	if (confirm("Desea cancelar?")) {
+    		return true;
+    } else {
+        return false;
+    }
+};
