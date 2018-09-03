@@ -67,6 +67,14 @@
 	z-index: 999;
 }
 
+.navbar a:hover {
+	background: red;
+}
+
+.navbar2 a:hover {
+	background: red;
+}
+
 .navbar2 {
   padding: 10px 16px;
   background-color: #333;
