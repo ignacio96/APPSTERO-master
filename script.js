@@ -26,13 +26,13 @@ function setBindings() {
 									$("#" + id).fadeTo(1000, .25);
 									var precio = parseInt(document.getElementById(id + "precio").innerText);
 									total = total + precio;
-									alert (total);
+									document.getElementById("total").textContent = total;
 						}
 						else {
 									$("#" + id).fadeTo(1000, 1);
 									var precio = parseInt(document.getElementById(id + "precio").innerText);
 									total = total - precio;
-									alert (total);
+									document.getElementById("total").textContent = total;
 						}
 
 		});
