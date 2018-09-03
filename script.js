@@ -25,7 +25,8 @@ function setBindings() {
 
 						if ($("#" + id).css('opacity') == 1) {
 									$("#" + id).fadeTo(1000, .25);
-						var precio = parseInt(document.getElementById("precio").innerText);
+									var precio = parseInt(document.getElementById(id + "precio").innerText);
+									alert (precio)
 						}
 						else {
 									$("#" + id).fadeTo(1000, 1)
