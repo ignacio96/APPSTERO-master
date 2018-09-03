@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	setBindings();
 
-
+			var total = 0;
 
 function setBindings() {
 
@@ -22,14 +22,17 @@ function setBindings() {
 
 	$(".box").click(function(e){
 			var id = $(this).children().children().children().attr("id");
-
 						if ($("#" + id).css('opacity') == 1) {
 									$("#" + id).fadeTo(1000, .25);
 									var precio = parseInt(document.getElementById(id + "precio").innerText);
-									alert (precio)
+									total = total + precio;
+									alert (total);
 						}
 						else {
-									$("#" + id).fadeTo(1000, 1)
+									$("#" + id).fadeTo(1000, 1);
+									var precio = parseInt(document.getElementById(id + "precio").innerText);
+									total = total - precio;
+									alert (total);
 						}
 
 		});
