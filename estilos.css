@@ -532,8 +532,8 @@ input[type=button] {
 }
 
 .navbar2 a2 {
-	float:right;
-	font-size: 14px;
+	font-size: 13px;
+	float:none;
 }
 
 
@@ -545,7 +545,8 @@ input[type=button] {
 
 .navbar a2 {
 	float:right;
-	margin-right: 5%
+	font-size:13px;
+	text-align:center;
 
 }
 
