@@ -104,6 +104,12 @@
 }
 
 
+@media screen and (max-width: 600px) {
+    .container{
+        background-color: black;
+    }
+}
+
  main {
   padding: 16px;
 }
